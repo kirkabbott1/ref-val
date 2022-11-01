@@ -1,0 +1,5 @@
+	There are a few key differences between value types and reference types. Typical value types are structs, Enums, Int, Tuple, String, Array etc. 
+
+	Values are stored in the stack and are much faster than reference types. Each thread has its own stack so anything in the stack is thread safe by default. When you pass a value type, you are passing a copy of the data and not any reference to the original. Variables stored on the stack are stored directly to memory. 
+
+	Reference types (for example Class, Function, and Actor) are stored in the Heap rather than stack. It is slower for a thread to get to the Heap than the stack. However, a benefit of reference types is they are synchronized. Reference types are not thread safe because they're stored in the heap, not on a specific thread. Passing a reference type creates a new reference to an instance, sometimes called a pointer.
